@@ -4,4 +4,8 @@ import react from '@vitejs/plugin-react-swc'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  root: './',  // Set the root directory
+  build: {
+    outDir: 'dist', // Set the build output directory
+  },
 })
